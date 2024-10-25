@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simply Blogging</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <div class="logo-container">
+        <a class="website-logo" href="#">
+          <img src="TextFlow.jpg" alt="TextFlow Website Logo" />
+          <span>TextFlow</span>
+        </a>
+      </div>
+      <div>
+        <nav>
+          <a class="main-nav-link" href="#sec-1">Welcome</a>
+          <a class="main-nav-link" href="#sec-2">Top Post</a>
+          <a class="main-nav-link" href="#sec-4">Blog</a>
+          <a class="main-nav-link" href="#sec-5">About</a>
+          <a class="main-nav-link nav-cta" href="#sec-3">POST YOUR BLOG</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="container">
+      <section id="sec-1">
+        <div class="heading-1">
+          <h1>A Remarkable Website for Posting Tech Blogs and Articles</h1>
+        </div>
+
+        <div class="hero-sec">
+          <div class="left-box">
+            <div class="image-box">
+              <img src="desktop-image.jpg" alt="Sea-beach" />
+            </div>
+            <div class="image-box-link">
+              <h3 class="image-box-heading">INSIDE TEXTFLOW</h3>
+              <a href="#">Everything we launched at TextFlow Conf 2023</a>
+              <p>
+                A recap of everything we announced at TextFlow Conf 2023 to help
+                teams build, manage, analyze, and optimize websites.
+              </p>
+            </div>
+          </div>
+          <div class="right-box">
+            <div class="para-box-right">
+              <a href="#">
+                <h3 class="para-box-heading">STRATEGY</h3>
+                <p>
+                  How leading companies optimize their websites to drive
+                  conversions and revenue
+                </p>
+              </a>
+            </div>
+            <div class="line-seperator"></div>
+            <div class="para-box-right">
+              <a href="#">
+                <h3 class="para-box-heading">ARTICLE</h3>
+                <p>AI and the future of the web</p>
+              </a>
+            </div>
+            <div class="line-seperator"></div>
+            <div class="para-box-right">
+              <a href="#">
+                <h3 class="para-box-heading">ARTICLE</h3>
+                <p>
+                  How collaborative web development helps teams build better
+                  websites, faster
+                </p>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="sec-2">
+        <div class="center-text">
+          <h2 class="heading-2">Top Posts of The week from The Tech World</h2>
+        </div>
+
+        <div class="grid--3-cols">
+          <div class="boxes">
+            <img src="desktop-image.jpg" class="box-img" alt="Tech Articles" />
+            <div class="box-content">
+              <div class="box-tags">
+                <span class="tag tag--col">ARTICLE</span>
+              </div>
+              <a href="#" class="box-title">Artificial Intelligence</a>
+
+              <p class="post-para">
+                Simulating human intelligence via machines, learning,
+                problem-solving, and automation, transforming industries and
+                revolutionizing futures.
+              </p>
+            </div>
+          </div>
+
+          <div class="boxes">
+            <img src="desktop-image.jpg" class="box-img" alt="Tech Articles" />
+            <div class="box-content">
+              <div class="box-tags">
+                <span class="tag tag--col">ARTICLE</span>
+              </div>
+              <a href="#" class="box-title">Artificial Intelligence</a>
+
+              <p class="post-para">
+                Simulating human intelligence via machines, learning,
+                problem-solving, and automation, transforming industries and
+                revolutionizing futures.
+              </p>
+            </div>
+          </div>
+
+          <div class="boxes">
+            <img src="desktop-image.jpg" class="box-img" alt="Tech Articles" />
+            <div class="box-content">
+              <div class="box-tags">
+                <span class="tag tag--col">ARTICLE</span>
+              </div>
+              <a href="#" class="box-title">Artificial Intelligence</a>
+
+              <p class="post-para">
+                Simulating human intelligence via machines, learning,
+                problem-solving, and automation, transforming industries and
+                revolutionizing futures.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="sec-3">
+        <div class="center-text">
+          <h2 class="heading-2">Post Your Blog</h2>
+        </div>
+
+        <div class="post-blog">
+          <h1>Blog Posting Form</h1>
+          <form id="blog-form">
+            <label class="form-lable" for="title">Title:</label>
+            <input
+              class="input-text"
+              type="text"
+              id="title"
+              name="title"
+              required
+            />
+
+            <label class="form-lable" for="content">Content:</label>
+            <textarea
+              class="input-text"
+              id="content"
+              name="content"
+              required
+            ></textarea>
+
+            <label class="form-lable" for="author">Author:</label>
+            <input
+              class="input-text"
+              type="text"
+              id="author"
+              name="author"
+              required
+            />
+            <div class="btn"><button id="submit-btn">Post Blog</button></div>
+          </form>
+        </div>
+      </section>
+
+      <section id="sec-4">
+        <div class="center-text">
+          <h2 class="heading-2">Blog Posts</h2>
+        </div>
+
+        <div class="row mb-2" id="blog-posts">
+          <div class="col-md-6">
+            <div
+              class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative"
+            >
+              <div class="col p-4 d-flex flex-column position-static">
+                <h3 class="mb-2.5 blog-h">Title</h3>
+                <div class="mb-2.5 text-body-secondary blog-a">
+                  Author: Author Name
+                </div>
+                <p class="card-text mb-auto blog-pre">
+                  Posted Blogs will appeare Here.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row mb-2">
+          <div class="col-md-6">
+            <div
+              class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative"
+            >
+              <div class="col p-4 d-flex flex-column position-static">
+                <h3 class="mb-2.5 blog-h">
+                  Neuralink A Neurotechnology Company
+                </h3>
+                <div class="mb-2.5 text-body-secondary blog-a">Author: Dev</div>
+                <p class="card-text mb-auto blog-p">
+                  Neuralink is a neurotechnology company developing implantable
+                  brain–machine interfaces (BMIs) founded by Elon Musk. It aims
+                  to enhance human cognition and memory, treat medical
+                  conditions like paralysis and depression, and enable human-AI
+                  interaction, potentially achieving symbiosis between humans
+                  and AI. Neuralink's technology involves implantable chips,
+                  thin flexible electrodes, and wireless communication, with the
+                  ultimate goal of merging human and artificial intelligence.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div
+              class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative"
+            >
+              <div class="col p-4 d-flex flex-column position-static">
+                <h3 class="mb-2.5 blog-h">
+                  Neuralink A Neurotechnology Company
+                </h3>
+                <div class="mb-2.5 text-body-secondary blog-a">Author: Dev</div>
+                <p class="card-text mb-auto blog-p">
+                  Neuralink is a neurotechnology company developing implantable
+                  brain–machine interfaces (BMIs) founded by Elon Musk. It aims
+                  to enhance human cognition and memory, treat medical
+                  conditions like paralysis and depression, and enable human-AI
+                  interaction, potentially achieving symbiosis between humans
+                  and AI. Neuralink's technology involves implantable chips,
+                  thin flexible electrodes, and wireless communication, with the
+                  ultimate goal of merging human and artificial intelligence.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div
+              class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative"
+            >
+              <div class="col p-4 d-flex flex-column position-static">
+                <h3 class="mb-2.5 blog-h">
+                  Neuralink A Neurotechnology Company
+                </h3>
+                <div class="mb-2.5 text-body-secondary blog-a">Author: Dev</div>
+                <p class="card-text mb-auto blog-p">
+                  Neuralink is a neurotechnology company developing implantable
+                  brain–machine interfaces (BMIs) founded by Elon Musk. It aims
+                  to enhance human cognition and memory, treat medical
+                  conditions like paralysis and depression, and enable human-AI
+                  interaction, potentially achieving symbiosis between humans
+                  and AI. Neuralink's technology involves implantable chips,
+                  thin flexible electrodes, and wireless communication, with the
+                  ultimate goal of merging human and artificial intelligence.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="sec-5">
+        <div class="center-text">
+          <h2 class="heading-2">About</h2>
+        </div>
+
+        <div class="about-us">
+          <p>
+            "Welcome to Our Blog Posting, a project website page developed by
+            Kunwar Abhash Singh 'Kasstac'."
+          </p>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="seperate-line"></div>
+      <p class="copyright">
+        Copyright &copy; 2023 by TextFlow, Inc. All rights reserved.
+      </p>
+    </footer>
+    <script src="script.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
